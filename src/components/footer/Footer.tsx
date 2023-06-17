@@ -1,7 +1,11 @@
 export default function Footer() {
     return (
-        <main className="flex justify-center">
-            <h4 className="font-normal">This is footer made by Luan Dinh</h4>
+        <main className="mt-10">
+            <div className="w-full min-h-[60px]  flex justify-center align-middle">
+                <span className="text-base font-medium flex align-middle">
+                    Copyright © MapexViet
+                </span>
+            </div>
         </main>
     );
 }
