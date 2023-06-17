@@ -60,7 +60,7 @@ export default function Navbar() {
                             <div className="flex-initial grow relative w-full">
                                 <input
                                     type="text"
-                                    placeholder="Nhà hàng, đồ gia dụng, chợ,.."
+                                    placeholder="Tìm kiếm quán ăn ngon, trà sữa,.."
                                     className="search__product--input w-full border-solid-2 border-cyan-100 h-10 max-[768px]:h-7 px-4 rounded-l-md max-[768px]:rounded-md border outline-0 focus:rounded-bl-none"
                                 />
 
@@ -182,7 +182,7 @@ export default function Navbar() {
                                             <div className="flex gap-4 ">
                                                 <div className="overflow-hidden text-ellipsis whitespace-nowrap">
                                                     <span className="text-base ">
-                                                        Cổ Nhuế, Hà Nội
+                                                        Đống Đa, Hà Nội
                                                     </span>
                                                 </div>
                                             </div>
