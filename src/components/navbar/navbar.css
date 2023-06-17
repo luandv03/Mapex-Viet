@@ -1,0 +1,15 @@
+.search__product--results {
+    display: none;
+}
+
+.search__product--input:focus ~ .search__product--results {
+    display: block;
+}
+
+.search__location--input:focus ~ .search__location--results {
+    display: block;
+}
+
+.search__location--results {
+    display: none;
+}

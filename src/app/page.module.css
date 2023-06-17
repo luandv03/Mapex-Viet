@@ -227,3 +227,11 @@
         transform: rotate(0deg);
     }
 }
+
+.move__slide {
+    display: none;
+}
+
+.slide:hover .move__slide {
+    display: block;
+}
