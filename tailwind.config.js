@@ -20,8 +20,8 @@ module.exports = {
                 8: "8px",
             },
             boxShadow: {
-                "bound-box": "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;",
-                "bound-box-hover": "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
+                "bound-box": "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
+                "bound-box-hover": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
             },
             animation: {
                 "spin-slow": "spin 2s linear infinite",
