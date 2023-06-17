@@ -32,10 +32,15 @@ export default function Home() {
                             <div className="w-full h-full grid grid-rows-2 grid-cols-3 gap-2">
                                 <div
                                     className={clsx(
-                                        "col-span-2 row-span-2 bg-red-400 hover:cursor-pointer relative",
+                                        "col-span-2 row-span-2 hover:cursor-pointer relative",
                                         styles.slide
                                     )}
                                 >
+                                    <Image
+                                        src="/banner_1.png"
+                                        fill
+                                        alt="banner"
+                                    />
                                     <div
                                         className={clsx(
                                             "absolute h-10 w-6 text-white bg-[#0000002e] hover:opacity-80 flex items-center pl-3 py-3  left-0 top-1/2 -translate-y-1/2",
@@ -63,102 +68,113 @@ export default function Home() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="bg-slate-500 hover:cursor-pointer"></div>
-                                <div className="bg-slate-500 hover:cursor-pointer"></div>
+                                <div className="hover:cursor-pointer">
+                                    <div className="w-full h-full relative">
+                                        <Image
+                                            src="/banner_2.png"
+                                            fill
+                                            alt="Banner_2"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="bg-slate-500 hover:cursor-pointer">
+                                    <div className="w-full h-full relative">
+                                        <Image
+                                            src="/banner_3.png"
+                                            fill
+                                            alt="Banner_3"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {/* may cai icon linh tinh ben duoi */}
                         <div className="w-full h-[124px] flex items-center justify-center">
-                            <ul className=" flex justify-center gap-6">
-                                <li className="w-[80px] h-[81px]">
-                                    <div>
+                            <ul className="h-full items-center flex justify-center gap-10">
+                                <li className="w-[80px] h-[81px] hover:mb-[2px] hover:cursor-pointer">
+                                    <div className="flex justify-center">
                                         <Image
-                                            src="/sam_set.png"
+                                            src="/radar.png"
                                             height={45}
                                             width={45}
                                             alt="seo"
+                                            className="border p-2 border-red-400 rounded-md"
                                         />
                                     </div>
-                                    <span className="text-sm">
-                                        Ưu đãi giới hạn
-                                    </span>
+                                    <p className="text-base text-center">
+                                        Ưu đãi gần hạn
+                                    </p>
                                 </li>
 
-                                <li className="w-[80px] h-[81px]">
-                                    <div>
+                                <li className="w-[80px] h-[81px] hover:mb-[2px] hover:cursor-pointer">
+                                    <div className="flex justify-center">
                                         <Image
-                                            src="/delivery.jpg"
+                                            src="/electric_bolt.png"
                                             height={45}
                                             width={45}
                                             alt="seo"
+                                            className="border p-2 border-red-400 rounded-md"
                                         />
                                     </div>
-                                    <span className="text-base">
+                                    <p className="text-base text-center">
                                         Super flash sales
-                                    </span>
+                                    </p>
                                 </li>
-                                <li className="w-[80px] h-[81px] ">
-                                    <div>
+                                <li className="w-[80px] h-[81px] hover:mb-[2px] hover:cursor-pointer">
+                                    <div className="flex justify-center">
                                         <Image
-                                            src="/extra.png"
+                                            src="/storefront.png"
                                             height={45}
                                             width={45}
                                             alt="seo"
+                                            className="border p-2 border-red-400 rounded-md"
                                         />
                                     </div>
-                                    <span className="text-base">Đặt chỗ</span>
+                                    <p className="text-base text-center">
+                                        Đặt chỗ
+                                    </p>
                                 </li>
-                                <li className="w-[80px] h-[81px]">
-                                    <div>
+                                <li className="w-[80px] h-[81px] hover:mb-[2px] hover:cursor-pointer">
+                                    <div className="flex justify-center">
                                         <Image
-                                            src="/outlet.png"
+                                            src="/local_activity.png"
                                             height={45}
                                             width={45}
                                             alt="seo"
+                                            className="border p-2 border-red-400 rounded-md"
                                         />
                                     </div>
-                                    <span className="text-base">
+                                    <p className="text-base text-center">
                                         Voucher của tôi
-                                    </span>
+                                    </p>
                                 </li>
-                                <li className="w-[80px] h-[81px]">
-                                    <div>
+                                <li className="w-[80px] h-[81px] hover:mb-[2px] hover:cursor-pointer">
+                                    <div className="flex justify-center">
                                         <Image
-                                            src="/fire.png"
+                                            src="/favorite.png"
                                             height={45}
                                             width={45}
                                             alt="seo"
+                                            className="border p-2 border-red-400 rounded-md"
                                         />
                                     </div>
-                                    <span className="text-base">
+                                    <p className="text-base text-center">
                                         Cửa hàng yêu thích
-                                    </span>
+                                    </p>
                                 </li>
-                                <li className="w-[80px] h-[81px]">
-                                    <div>
+                                <li className="w-[80px] h-[81px] hover:mb-[2px] hover:cursor-pointer">
+                                    <div className="flex justify-center">
                                         <Image
-                                            src="/phone.png"
+                                            src="/send.png"
                                             height={45}
                                             width={45}
                                             alt="seo"
+                                            className="border p-2 border-red-400 rounded-md"
                                         />
                                     </div>
-                                    <span className="text-base">
+                                    <p className="text-base text-center">
                                         Bài viết chia sẻ
-                                    </span>
-                                </li>
-                                <li className="w-[80px] h-[81px]">
-                                    <div>
-                                        <Image
-                                            src="/sam_set.png"
-                                            height={45}
-                                            width={45}
-                                            alt="seo"
-                                        />
-                                    </div>
-                                    <span className="text-base">
-                                        Ưu đãi giới hạn
-                                    </span>
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -170,98 +186,185 @@ export default function Home() {
                     <h3 className="text-lg font-semibold">Danh mục</h3>
                 </div>
                 <div className="w-full flex justify-center ">
-                    <div className="w-full grid grid-cols-4 gap-4">
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                    <div className="w-full grid grid-cols-5 gap-4">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
-                                        <FontAwesomeIcon icon={faCarSide} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Xe Cộ
-                                    </p>
+                                <div className="flex ">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/fashion.png"
+                                            width={80}
+                                            height={80}
+                                            alt="thoitrang"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Thời trang
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
-                                        <FontAwesomeIcon icon={faBagShopping} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Thời Trang
-                                    </p>
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/make_up.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Làm đẹp
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600 ">
-                                        <FontAwesomeIcon icon={faUserDoctor} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Sức khỏe
-                                    </p>
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/vegetable.png"
+                                            width={80}
+                                            height={80}
+                                            alt="thucpham"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Thực phẩm
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
-                                        <FontAwesomeIcon icon={faCarrot} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Thực Phẩm
-                                    </p>
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/restaurant.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Nhà hàng
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
-                                        <FontAwesomeIcon icon={faPen} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Văn phòng phẩm
-                                    </p>
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/furniture.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Gia dụng nội thất
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
-                                        <FontAwesomeIcon icon={faCarSide} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Đồ gia dụng
-                                    </p>
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/eletric.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <span className="text-base font-semibold">
+                                            Thiết bị điện tử
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center  items-center">
-                                <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
-                                        <FontAwesomeIcon icon={faUtensils} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
-                                        Ăn uống
-                                    </p>
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/vehicle.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Xe cộ
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[180px] w-[250px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                            <div className="w-full h-full flex justify-center items-center">
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/office.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Văn phòng phẩm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
+                            <div className="w-full h-full flex justify-center items-center">
+                                <div className="flex">
+                                    <div className="w-[80px] h-[80px]">
+                                        <Image
+                                            src="/detail.png"
+                                            width={80}
+                                            height={80}
+                                            alt="lamdep"
+                                        />
+                                    </div>
+                                    <div className="flex items-center h-[80px]">
+                                        <p className="text-base font-semibold">
+                                            Sửa chữa
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="h-[104px] w-[224px] bg-white border border-red-200 rounded-sm hover:cursor-pointer hover:shadow-bound-box-hover hover:border-none ">
                             <div className="w-full h-full flex justify-center items-center">
                                 <div className="">
-                                    <span className=" text-center text-2xl block text-red-600">
+                                    <div className=" text-center text-2xl block text-red-600">
                                         <FontAwesomeIcon icon={faEllipsis} />
-                                    </span>
-                                    <p className="text-lg font-semibold ">
+                                    </div>
+                                    <p className="text-base font-semibold ">
                                         Khác
                                     </p>
                                 </div>
@@ -769,8 +872,8 @@ export default function Home() {
 
                                     <div className="w-full">
                                         <Link href="#">
-                                            <span className="text-base font-medium text-blue-500">
-                                                Continue...
+                                            <span className="hover:underline text-base font-medium text-blue-500">
+                                                Đọc thêm
                                             </span>
                                         </Link>
                                     </div>
@@ -874,8 +977,8 @@ export default function Home() {
 
                                     <div className="w-full">
                                         <Link href="#">
-                                            <span className="text-base font-medium text-blue-500">
-                                                Continue...
+                                            <span className="hover:underline text-base font-medium text-blue-500">
+                                                Đọc thêm
                                             </span>
                                         </Link>
                                     </div>
@@ -912,7 +1015,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex-1 h-full ml-2">
-                                    <span className="text-base font-semibold block">
+                                    <span className="text-base font-semibold block hover:cursor-pointer hover:underline">
                                         lisa
                                     </span>
                                     <span className="text-sm">Đã đánh giá</span>
@@ -979,8 +1082,8 @@ export default function Home() {
 
                                     <div className="w-full">
                                         <Link href="#">
-                                            <span className="text-base font-medium text-blue-500">
-                                                Continue...
+                                            <span className="hover:underline text-base font-medium text-blue-500">
+                                                Đọc thêm
                                             </span>
                                         </Link>
                                     </div>
@@ -1017,7 +1120,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex-1 h-full ml-2">
-                                    <span className="text-base font-semibold block">
+                                    <span className="text-base font-semibold block hover:cursor-pointer hover:underline">
                                         lisa
                                     </span>
                                     <span className="text-sm">Đã đánh giá</span>
@@ -1084,8 +1187,8 @@ export default function Home() {
 
                                     <div className="w-full">
                                         <Link href="#">
-                                            <span className="text-base font-medium text-blue-500">
-                                                Continue...
+                                            <span className="hover:underline text-base font-medium text-blue-500">
+                                                Đọc thêm
                                             </span>
                                         </Link>
                                     </div>
@@ -1122,7 +1225,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex-1 h-full ml-2">
-                                    <span className="text-base font-semibold block">
+                                    <span className="text-base font-semibold block hover:cursor-pointer hover:underline">
                                         lisa
                                     </span>
                                     <span className="text-sm">Đã đánh giá</span>
@@ -1189,8 +1292,8 @@ export default function Home() {
 
                                     <div className="w-full">
                                         <Link href="#">
-                                            <span className="text-base font-medium text-blue-500">
-                                                Continue...
+                                            <span className="hover:underline text-base font-medium text-blue-500">
+                                                Đọc thêm
                                             </span>
                                         </Link>
                                     </div>
@@ -1227,7 +1330,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex-1 h-full ml-2">
-                                    <span className="text-base font-semibold block">
+                                    <span className="text-base font-semibold block hover:cursor-pointer hover:underline">
                                         lisa
                                     </span>
                                     <span className="text-sm">Đã đánh giá</span>
@@ -1294,8 +1397,8 @@ export default function Home() {
 
                                     <div className="w-full">
                                         <Link href="#">
-                                            <span className="text-base font-medium text-blue-500">
-                                                Continue...
+                                            <span className="hover:underline text-base font-medium text-blue-500">
+                                                Đọc thêm
                                             </span>
                                         </Link>
                                     </div>
